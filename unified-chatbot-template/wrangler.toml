@@ -3,4 +3,8 @@ main = "src/chatbot-worker.js"
 compatibility_date = "2025-07-06"
 
 [vars]
-BOT_MODE = "dev"
+BOT_MODE = "dev"  # can be overridden per bot at deploy
+
+[[kv_namespaces]]
+binding = "CHATBOT_KV"
+id = "your-kv-namespace-id"
